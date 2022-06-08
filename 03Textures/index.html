@@ -11,7 +11,7 @@
     <a-scene background="color: #87ceeb">
       <a-assets>
           <img id="sand" src="images/sand.jpg"/>
-          <audio id="ocean" src="images/Ocean.wav"/>
+        <audio id="ocean" src="images/Ocean.wav" preload="auto"></audio>
         </a-assets>
         
       <a-plane id="ground"
@@ -22,7 +22,7 @@
         color="#fffdf2" 
         material="src: #sand; repeat: 10 10"
         shadow>
-        material="src: #ocean;" shadow>
+        <a-entity sound="src: #ocean"></a-entity>
       </a-plane> 
       
     </a-scene>
