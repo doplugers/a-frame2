@@ -11,8 +11,9 @@
     <a-scene background="color: #87ceeb">
       <a-assets>
           <img id="sand" src="images/sand.jpg"/>
-        <audio id="ocean" src="images/Ocean.wav" preload="auto"></audio>
         </a-assets>
+      <a-scene>
+        <a-sound src="src: url(ocean.wav)" autoplay="true" position="0 2 5"
         
       <a-plane id="ground"
         position="0 0 -4" 
@@ -22,7 +23,6 @@
         color="#fffdf2" 
         material="src: #sand; repeat: 10 10"
         shadow>
-        <a-entity sound="src: #ocean"></a-entity>
       </a-plane> 
       
     </a-scene>
