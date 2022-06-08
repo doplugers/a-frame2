@@ -11,6 +11,7 @@
     <a-scene background="color: #87ceeb">
       <a-assets>
           <img id="sand" src="images/sand.jpg"/>
+          <audio id="ocean" src="images/Ocean.wav"/>
         </a-assets>
         
       <a-plane id="ground"
@@ -21,9 +22,9 @@
         color="#fffdf2" 
         material="src: #sand; repeat: 10 10"
         shadow>
+        material="src: #ocean;" shadow>
       </a-plane> 
-      <a-entity light="type: ambient; color: #BBB"></a-entity>
-      <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 1 1"></a-entity>
+      
     </a-scene>
   </body>
 </html>
